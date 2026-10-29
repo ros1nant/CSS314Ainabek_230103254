@@ -1,0 +1,294 @@
+{
+  "cpu_model": "13th Gen Intel(R) Core(TM) i7-13650HX",
+  "reported_max_frequency_mhz": 2600,
+  "physical_cores": 14,
+  "core_masks": [
+    3,
+    12,
+    48,
+    192,
+    768,
+    3072,
+    4096,
+    8192,
+    16384,
+    32768,
+    65536,
+    131072,
+    262144,
+    524288
+  ],
+  "caches": [
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 4096
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 4096
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 8192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 8192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 16384
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 16384
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 32768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 32768
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 2097152,
+      "type": "unified",
+      "logical_cpu_mask": 61440
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 65536
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 65536
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 131072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 131072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 262144
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 262144
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 524288
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 524288
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 2097152,
+      "type": "unified",
+      "logical_cpu_mask": 983040
+    },
+    {
+      "level": 3,
+      "line_bytes": 64,
+      "size_bytes": 25165824,
+      "type": "unified",
+      "logical_cpu_mask": 1048575
+    }
+  ],
+  "topology_source": "GetLogicalProcessorInformation + Win32_Processor (current processor group)",
+  "timestamp_utc": "2026-10-29T07:11:52.777020+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "kernel": "11",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "implementation": "CPython",
+  "logical_threads": 20,
+  "microarchitecture": null,
+  "base_frequency_mhz": null,
+  "unknown_fields_note": "Microarchitecture and base frequency are not inferred from marketing names.",
+  "smoke": false,
+  "smt_detected": true
+}

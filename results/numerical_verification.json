@@ -1,0 +1,29 @@
+{
+  "kind": "local SHA-256 integrity receipt; not a digital signature or instructor authentication",
+  "timestamp_utc": "2026-10-29T07:52:17.135463+00:00",
+  "student_id": "30103254",
+  "smoke": false,
+  "files_sha256": {
+    ".gitkeep": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "counter_checks.json": "d9e6fc8c11cbe30f9e93bf806208dd4119fdd12b9d88dd06ff8733b10b93a277",
+    "dense_arrays.npz": "db780db95908fd1859c6615b1c4c7c08c4c93275a431599cf1520017ffe25cfd",
+    "false_sharing_karp_flatt.tsv": "75d319f2a90d2b1ce166fb885011d0b84c5654860eb70d6e4458d405a8be675d",
+    "host_profile.json": "c698fdc162f9f7b9e8253c14915e07308f29d18a2a83ce599de969e8566914d7",
+    "loop_interchange.json": "b2db631abec2bbca61ac799ce1e10c4925320f3baf4239f12c6632868e8f43a1",
+    "roofline_summary.json": "9c4851a1e4050b0f4c6f953e7f91469725fb4b6a6f235368cbe055f25be444e7",
+    "salted_params.json": "ed1af15ce18f86518061442d0b2edcd72ed68d9c10b3a0a6c02ef39d2e40d893",
+    "scaling_metrics.tsv": "127f91f6de1e7089c45c425d7ff8d11c87316bfd084f32cb18bdadd3b4f4c3a8",
+    "stencil_strong_1.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_strong_14.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_strong_2.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_strong_4.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_strong_8.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_weak_1.npz": "a651b8dea302c450e4584be4fd0b2975f32f6bdac1a9e87a36342d40adf4dbdc",
+    "stencil_weak_14.npz": "274778df4c02a5bd4f2b688abbccee35d003436baadcc3259eaef3fb37cb1ebb",
+    "stencil_weak_2.npz": "10b57af555f45b60cd48a726eb284c1250632c929a87b054b5b366d81a8f05af",
+    "stencil_weak_4.npz": "19f946dc686e2701c1409ca3a84a8f740555a96aceec70f43b51beea53b7be05",
+    "stencil_weak_8.npz": "196dd8b1ef0e06c4563dcc138cbfff51d1fee799633e7bdc850e642567a21c3b",
+    "stride_results.tsv": "0edd18278af9d49d20b9651176fc431176591de139e4399ce1e3044f08f935d1",
+    "verification_receipt.sig": "3fd743676d89ca471e9607aec11c5125a4b31a3912b4a04b67b8d2c5c5f7813c"
+  }
+}

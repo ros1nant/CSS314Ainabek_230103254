@@ -1,22 +1,24 @@
 {
-  "N": 1152,
-  "M": 576,
-  "naive_ns": 13478624900,
-  "interchanged_ns": 10244526900,
-  "speedup": 1.3156903224101055,
+  "N": 1472,
+  "M": 736,
+  "naive_ns": 35198786600,
+  "interchanged_ns": 20924715600,
+  "speedup": 1.6821632022563786,
   "naive_samples_ns": [
-    14015323300,
-    13379690100,
-    13478624900
+    35198786600,
+    35437668800,
+    35007920800
   ],
   "interchanged_samples_ns": [
-    10018876000,
-    10483448900,
-    10244526900
+    20859598800,
+    21126796200,
+    20924715600
   ],
   "max_abs_error": 0.0,
-  "baseline_digest": "fa1f0d79d594657e59ad9344c663016f83d9971f3f5d001b1673e0fb77b0379f",
-  "optimized_digest": "fa1f0d79d594657e59ad9344c663016f83d9971f3f5d001b1673e0fb77b0379f",
+  "baseline_digest": "13de35e1647517e682f2efd9b7eeaba658f642be24ae1e55584860253ba80598",
+  "optimized_digest": "13de35e1647517e682f2efd9b7eeaba658f642be24ae1e55584860253ba80598",
   "implementation": "Explicit Python loops over flat lists; interpreter and object costs included.",
-  "smoke": false
+  "smoke": false,
+  "naive_time_s": 35.1987866,
+  "interchanged_time_s": 20.9247156
 }

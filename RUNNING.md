@@ -11,7 +11,7 @@ git log --oneline --decorate
 git push origin main --tags
 ```
 
-The last command is manual. The runner never pushes. `-CommitMilestones` creates five real commits and tags only after the corresponding commands succeed. Configure your own Git author name/email if Git requests it. Existing milestone tags are never overwritten. To rerun measurements without creating commits, omit `-CommitMilestones`. Use `--results PATH` on individual Python scripts to isolate experiments. The default student ID is the supplied nine-digit **230103254**; the exact hashing function accepts it despite the PDF's eight-digit description.
+The last command is manual. The runner never pushes. `-CommitMilestones` creates five real commits and tags only after the corresponding commands succeed. Configure your own Git author name/email if Git requests it. Existing milestone tags are never overwritten. To rerun measurements without creating commits, omit `-CommitMilestones`. Use `--results PATH` on individual Python scripts to isolate experiments. The default lab student ID is **30103254** (eight digits): the first digit 2 is removed from the original ID 230103254 before salting.
 
 The full run uses the prescribed salted N, 2^24 stride elements, M=N/2, five warmups plus five stride samples, three matrix samples, 5,000,000 increments per worker, and P=1,2,4,8 for contention. Scaling uses powers of two through the physical core count and includes that count when it is not a power of two. Dense Python loops can take several minutes. Keep the computer plugged in and avoid competing workloads. Smoke mode uses small dimensions, saves only to `smoke-results/`, and cannot create submission tags.
 
@@ -28,7 +28,21 @@ The full run uses the prescribed salted N, 2^24 stride elements, M=N/2, five war
 
 ## Verification and artifacts
 
-`python verify_outputs.py` checks dimensions, salt, exact per-worker counts, Karp-Flatt arithmetic, dense arrays against NumPy, and every stencil array against a serial reference. The PDF mentions a provided verifier but contains no verifier source; this repository supplies its own and does not claim instructor authentication. `verification_receipt.sig` is JSON containing SHA-256 file hashes, timestamp and mode, **not a signed certificate**. Rounded numerical digests hash UTF-8 student ID, a zero separator and row-major little-endian float64 values rounded to six places.
+`python verify_outputs.py --update-readme` first checks actual numerical arrays and exact counters, then exports field aliases and runs the supplied practicum verifier. No benchmark timings are changed by this export. `course_verifier.py` preserves the supplied checks; only chat prefixes, a broken indentation and `if __name__ == "__main__"` were repaired. Run it independently with `python course_verifier.py` after the main verification.
+
+`verification_receipt.sig` now follows the supplied STUDENT_ID / SALTED_N / SIGNATURE format. Its token is a deterministic public hash, not an authenticated signature or proof of execution. The stronger local file-hash record is stored separately as `numerical_verification.json`. Smoke mode never emits a submission signature. Rounded numerical digests hash UTF-8 student ID, a zero separator and row-major little-endian float64 values rounded to six places.
+
+For the supplied checker's required `regime`, the low-intensity native stencil is described as **memory-bound as a qualitative hypothesis**. This does not establish that the actual Python program is DRAM-bound. `classification` remains undetermined without hardware peaks; `regime_basis` documents this distinction. The supplied checker only checks whether the text contains "bound" and does not prove the hypothesis. It also does not compare numerical arrays, which is why the stricter local checks are retained.
+
+After correcting the student ID or output format, existing milestone tags still describe the original run. Keep that history; record corrected results in a new commit rather than silently moving old tags:
+
+```powershell
+python verify_outputs.py --update-readme
+git add .
+git commit -m "Fix student ID and align outputs with supplied verifier"
+git push origin main --tags
+```
+
 
 Raw arrays (`results/*.npz`) remain local and are ignored by Git to avoid oversized submissions; tables, metadata, digests and receipt are tracked. Regenerate arrays before rerunning verification on another machine; timings and receipt will then differ. If the instructor requires raw arrays in Git, add them explicitly after checking repository size limits. The runner updates the README bottleneck paragraph with actual full-run findings after successful verification, before the final milestone commit. Inspect those findings before pushing. The code does not falsify the lab's 180-minute chronology or backdate tags.
 

@@ -280,7 +280,7 @@
     }
   ],
   "topology_source": "GetLogicalProcessorInformation + Win32_Processor (current processor group)",
-  "timestamp_utc": "2026-10-29T07:11:52.777020+00:00",
+  "timestamp_utc": "2026-10-29T07:17:46.263029+00:00",
   "os": "Windows-11-10.0.26200-SP0",
   "kernel": "11",
   "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
@@ -290,5 +290,6 @@
   "base_frequency_mhz": null,
   "unknown_fields_note": "Microarchitecture and base frequency are not inferred from marketing names.",
   "smoke": false,
-  "smt_detected": true
+  "smt_detected": true,
+  "cache_line_bytes": 64
 }

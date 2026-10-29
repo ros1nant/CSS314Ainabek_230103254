@@ -75,7 +75,7 @@ def linux_topology():
 
 def main():
     p = parser('Capture real host telemetry and student parameters')
-    p.add_argument('--student-id', default='230103254')
+    p.add_argument('--student-id', default='30103254')
     args = p.parse_args()
     out = prepare(args)
     if sys.platform == 'win32':

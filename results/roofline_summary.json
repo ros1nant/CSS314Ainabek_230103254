@@ -6,7 +6,7 @@
   "arithmetic_intensity_ideal_reuse": 0.3125,
   "traffic_note": "48 B is logical access traffic, not measured DRAM traffic. Cache reuse, NumPy temporaries, repeated immutable sweeps and IPC affect actual traffic.",
   "stencil_note": "Repeated independent five-point sweeps of immutable input; not an evolving PDE simulation.",
-  "matrix_bytes": 10616832,
+  "matrix_bytes": 17334272,
   "caches": [
     {
       "level": 1,
@@ -273,10 +273,13 @@
   "peak_source": null,
   "classification": "undetermined: hardware peak bandwidth and peak FLOP/s required",
   "model_roof_gflops": null,
-  "best_observed_gflops": 1.3972542184927361,
-  "amdahl_serial_fraction_unconstrained": 0.1811054908476715,
-  "amdahl_serial_fraction": 0.1811054908476715,
-  "asymptotic_speedup": 5.521643741001225,
+  "best_observed_gflops": 1.4600458641831,
+  "amdahl_serial_fraction_unconstrained": 0.13329533024126028,
+  "amdahl_serial_fraction": 0.13329533024126028,
+  "asymptotic_speedup": 7.502138283389463,
   "fit_note": "Bounded fit in [0,1]. Null ceiling means zero serial fraction or insufficient data; overhead may violate Amdahl.",
-  "smoke": false
+  "smoke": false,
+  "arithmetic_intensity": 0.10416666666666667,
+  "regime": "memory-bound (qualitative hypothesis for the native stencil kernel, not a measured host classification)",
+  "regime_basis": "The stencil performs only five FLOPs per 48 logical bytes (5/16 with ideal reuse), suggesting a memory-bound native kernel. This is a hypothesis, not proof: CPU/RAM peaks and DRAM traffic were not measured. Python/NumPy temporaries, cache residency and IPC may instead dominate the implemented program. The measured host classification remains undetermined in classification."
 }

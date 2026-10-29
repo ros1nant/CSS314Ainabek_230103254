@@ -1,5 +1,5 @@
 param(
-    [string]$StudentId = '230103254',
+    [string]$StudentId = '30103254',
     [switch]$Smoke,
     [switch]$CommitMilestones,
     [double]$PeakBandwidthGBs = 0,
@@ -13,7 +13,7 @@ function Invoke-Checked([string]$Executable, [string[]]$Arguments) {
 }
 function Save-Milestone([string]$Message, [string]$Tag) {
     if ($CommitMilestones) {
-        Invoke-Checked git @('add', '--', 'src', 'results', 'README.md', 'RUNNING.md', 'requirements.txt', 'run_lab.ps1', 'verify_outputs.py', '.gitignore')
+        Invoke-Checked git @('add', '--', 'src', 'results', 'README.md', 'RUNNING.md', 'requirements.txt', 'run_lab.ps1', 'verify_outputs.py', 'course_verifier.py', '.gitignore')
         Invoke-Checked git @('commit', '-m', $Message)
         Invoke-Checked git @('tag', $Tag)
     }

@@ -1,0 +1,282 @@
+{
+  "flops_per_update": 5,
+  "logical_bytes_per_update": 48,
+  "arithmetic_intensity_logical": 0.10416666666666667,
+  "ideal_reuse_bytes_per_update": 16,
+  "arithmetic_intensity_ideal_reuse": 0.3125,
+  "traffic_note": "48 B is logical access traffic, not measured DRAM traffic. Cache reuse, NumPy temporaries, repeated immutable sweeps and IPC affect actual traffic.",
+  "stencil_note": "Repeated independent five-point sweeps of immutable input; not an evolving PDE simulation.",
+  "matrix_bytes": 10616832,
+  "caches": [
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 3
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 12
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 48
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 49152,
+      "type": "data",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "instruction",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 1310720,
+      "type": "unified",
+      "logical_cpu_mask": 3072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 4096
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 4096
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 8192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 8192
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 16384
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 16384
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 32768
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 32768
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 2097152,
+      "type": "unified",
+      "logical_cpu_mask": 61440
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 65536
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 65536
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 131072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 131072
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 262144
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 262144
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 32768,
+      "type": "data",
+      "logical_cpu_mask": 524288
+    },
+    {
+      "level": 1,
+      "line_bytes": 64,
+      "size_bytes": 65536,
+      "type": "instruction",
+      "logical_cpu_mask": 524288
+    },
+    {
+      "level": 2,
+      "line_bytes": 64,
+      "size_bytes": 2097152,
+      "type": "unified",
+      "logical_cpu_mask": 983040
+    },
+    {
+      "level": 3,
+      "line_bytes": 64,
+      "size_bytes": 25165824,
+      "type": "unified",
+      "logical_cpu_mask": 1048575
+    }
+  ],
+  "peak_bandwidth_gbs": null,
+  "peak_gflops": null,
+  "peak_source": null,
+  "classification": "undetermined: hardware peak bandwidth and peak FLOP/s required",
+  "model_roof_gflops": null,
+  "best_observed_gflops": 1.3972542184927361,
+  "amdahl_serial_fraction_unconstrained": 0.1811054908476715,
+  "amdahl_serial_fraction": 0.1811054908476715,
+  "asymptotic_speedup": 5.521643741001225,
+  "fit_note": "Bounded fit in [0,1]. Null ceiling means zero serial fraction or insufficient data; overhead may violate Amdahl.",
+  "smoke": false
+}

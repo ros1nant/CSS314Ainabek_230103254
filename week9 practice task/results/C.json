@@ -1,0 +1,51 @@
+{
+  "experiment": "C",
+  "parameters": {
+    "total_increments": 20000000
+  },
+  "rows": [
+    {
+      "workers": 1,
+      "time_s": 0.5679102002177387,
+      "samples_s": [
+        0.658723299857229,
+        0.5408030000980943,
+        0.5679102002177387
+      ],
+      "speedup": 1.0,
+      "efficiency_percent": 100.0,
+      "karp_flatt": null
+    },
+    {
+      "workers": 2,
+      "time_s": 0.3521229000762105,
+      "samples_s": [
+        0.3517312998883426,
+        0.3521229000762105,
+        0.3550501000136137
+      ],
+      "speedup": 1.6128181384818343,
+      "efficiency_percent": 80.64090692409171,
+      "karp_flatt": 0.24006541858626718
+    },
+    {
+      "workers": 4,
+      "time_s": 0.2780731001403183,
+      "samples_s": [
+        0.2751488001085818,
+        0.2780731001403183,
+        0.28115860000252724
+      ],
+      "speedup": 2.0423054223194046,
+      "efficiency_percent": 51.057635557985115,
+      "karp_flatt": 0.3195236383820402
+    }
+  ],
+  "timestamp_utc": "2026-10-30T03:47:33.455640+00:00",
+  "logical_cores": 20,
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.7",
+  "start_method": "spawn",
+  "timing": "Includes process/pool startup and synchronization; median of independent runs."
+}
